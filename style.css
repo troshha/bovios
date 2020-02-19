@@ -562,7 +562,7 @@ footer .footer-square {
   height: 217px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   header nav ul a {
     font-size: 20px;
   }
@@ -594,6 +594,9 @@ footer .footer-square {
 }
 
 @media screen and (max-width: 991px) {
+  .topnav img.logo {
+    margin-top: 10px;
+  }
   .footer-social a img {
     height: 20px;
   }
