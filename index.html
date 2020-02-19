@@ -9,7 +9,7 @@
   <body>
     <header>
       <nav id="header">
-        <ul>
+        <ul class="header-links">
           <li><a href="#">Головна</a></li>
           <li><a href="#">Продукція</a></li>
           <li><a href="#">Про нас</a></li>
@@ -18,6 +18,28 @@
           <li><a href="#">Контакти</a></li>
           <li><a href="#">Статті</a></li>
         </ul>
+
+        <div class="topnav">
+          <a href="#home"
+            ><img src="./img/logo.png" alt="Bovious Farma" class="logo"
+          /></a>
+          <div id="myLinks">
+            <a href="#">Головна</a>
+            <a href="#">Продукція</a>
+            <a href="#">Про нас</a>
+
+            <a href="#">Наша місія</a>
+            <a href="#">Контакти</a>
+            <a href="#">Статті</a>
+          </div>
+          <a
+            href="javascript:void(0);"
+            class="hamburger-icon"
+            onclick="mobilemenu()"
+          >
+            <img src="./img/hamburger.png" alt="" />
+          </a>
+        </div>
       </nav>
       <div class="container">
         <div class="header-content">
@@ -47,30 +69,42 @@
           <p>зацікавить вас</p>
         </div>
         <div class="production-grid">
-          <div class="production-grid-item">
-            <h1>Жіноче здоров'я</h1>
-            <p>До розділу <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="production-grid-item">
-            <h1>Жіноче здоров'я</h1>
-            <p>До розділу <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="production-grid-item">
-            <h1>Жіноче здоров'я</h1>
-            <p>До розділу <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="production-grid-item">
-            <h1>Жіноче здоров'я</h1>
-            <p>До розділу <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="production-grid-item">
-            <h1>Жіноче здоров'я</h1>
-            <p>До розділу <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="production-grid-item">
-            <h1>Жіноче здоров'я</h1>
-            <p>До розділу <span class="icon icon-arrow"></span></p>
-          </div>
+          <a href="#">
+            <div class="production-grid-item">
+              <h1>Жіноче здоров'я</h1>
+              <p>До розділу <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="production-grid-item">
+              <h1>Жіноче здоров'я</h1>
+              <p>До розділу <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="production-grid-item">
+              <h1>Жіноче здоров'я</h1>
+              <p>До розділу <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="production-grid-item">
+              <h1>Жіноче здоров'я</h1>
+              <p>До розділу <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="production-grid-item">
+              <h1>Жіноче здоров'я</h1>
+              <p>До розділу <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="production-grid-item">
+              <h1>Жіноче здоров'я</h1>
+              <p>До розділу <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -107,14 +141,16 @@
         <div class="contact-content">
           <h1>Зацікавила наша продукція?</h1>
           <p>Залиште ваш телефон і ми вам передзвонимо найближчим часом.</p>
-          <form>
+          <form id="contactForm" onsubmit="showpopup(event)">
             <input type="text" placeholder="Ім'я" required />
             <input
               type="tel"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               placeholder="Телефон"
             />
-            <button type="submit" class="btn">Зателефонуйте мені</button>
+            <button type="submit" class="btn" id="submit">
+              Зателефонуйте мені
+            </button>
           </form>
         </div>
         <img src="./img/girl.png" alt="" />
@@ -129,58 +165,48 @@
       </div>
       <div class="slider">
         <div class="articles-slider">
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
-          <div class="article">
-            <h1>Стаття</h1>
-            <p>Детальніше <span class="icon icon-arrow"></span></p>
-          </div>
+          <a href="#">
+            <div class="article">
+              <h1>Стаття</h1>
+              <p>Детальніше <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article">
+              <h1>Стаття</h1>
+              <p>Детальніше <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article">
+              <h1>Стаття</h1>
+              <p>Детальніше <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article">
+              <h1>Стаття</h1>
+              <p>Детальніше <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article">
+              <h1>Стаття</h1>
+              <p>Детальніше <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article">
+              <h1>Стаття</h1>
+              <p>Детальніше <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article">
+              <h1>Стаття</h1>
+              <p>Детальніше <span class="icon icon-arrow"></span></p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -239,6 +265,13 @@
         </div>
       </div>
     </footer>
+    <div class="popup">
+      <div class="popup-wrap">
+        <h1>Дякуємо за вашу заявку!</h1>
+        <p>Наш менеджер передзвонить вам протягом 20 хвилин.</p>
+        <img src="./img/blackberry.png" alt="" />
+      </div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
