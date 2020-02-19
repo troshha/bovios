@@ -132,13 +132,16 @@ header {
   background: url('./img/collage.png') no-repeat left center/cover;
   background-size: 60%;
   position: relative;
+  overflow: hidden;
 }
 
 header nav {
   height: 10vh;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 10;
   /* background-color: #ffffff; */
 }
@@ -715,6 +718,10 @@ footer .footer-square {
   header {
     background: url(./img/collage.png) no-repeat left bottom 10% / cover;
     background-size: 60%;
+  }
+
+  header nav {
+    height: 15vh;
   }
 
   header .header-content {
