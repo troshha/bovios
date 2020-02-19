@@ -81,6 +81,9 @@ img {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.dropdown > a:active .dropdown-content {
+  display: block;
+}
 
 .topnav {
   display: none;
